@@ -38,6 +38,9 @@ namespace EmployeeWage
             else
                 empHrs = 4; ////Assuming part time hours as 4
 
+
+
+
             //// switch case to calculate part time wages
             switch (empCheck)
             {
@@ -53,10 +56,19 @@ namespace EmployeeWage
             }
 
 
+      
+
+            Console.WriteLine("Employee wage = " + empWage);
+            //// Salary for 20 days
+
+            empWage = empHrs * EMP_RATE_PER_HOUR * 20;
+
+
            
 
 
             empWage = empHrs * EMP_RATE_PER_HOUR;
+
 
             Console.WriteLine("Employee wage = " + empWage);
         }
