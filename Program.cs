@@ -38,7 +38,23 @@ namespace EmployeeWage
             else
                 empHrs = 4; ////Assuming part time hours as 4
 
+            //// switch case to calculate part time wages
+            switch (empCheck)
+            {
+                case 0:
+                    empHrs = 4;
+                    break;
+                case 1:
+                    empHrs = 8;
+                    break;
+                default:
+                    empHrs = 0;
+                    break;
+            }
+
+
            
+
 
             empWage = empHrs * EMP_RATE_PER_HOUR;
 
