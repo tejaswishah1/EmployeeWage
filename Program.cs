@@ -27,9 +27,13 @@ namespace EmployeeWage
             //variable
             int empHrs =0;
             int empWage = 0;
+
             int totalEmpWage = 0;
             int totalHrs = 0;
             int DAYS = 1;
+
+
+            
 
             //Computation of wages: 
             empCheck = random.Next(0, 2);
@@ -40,6 +44,13 @@ namespace EmployeeWage
 
             else
                 empHrs = 4; ////Assuming part time hours as 4
+
+
+
+
+
+
+
             //// switch case to calculate part time wages
             switch (empCheck)
             {
@@ -54,12 +65,17 @@ namespace EmployeeWage
                     break;
             }
 
+
+
+
+
       
 
             Console.WriteLine("Employee wage = " + empWage);
             //// Salary for 20 days
 
             empWage = empHrs * EMP_RATE_PER_HOUR * 20;
+
             Console.WriteLine("Employee wage = " + empWage);
 
             //// Calculate wages for hours less than 100 and days less than 20
@@ -85,6 +101,17 @@ namespace EmployeeWage
                 totalEmpWage += empWage;
             }
             Console.WriteLine("Total Employee Wage = " + totalEmpWage);
+
+
+
+           
+
+
+            empWage = empHrs * EMP_RATE_PER_HOUR;
+
+
+            Console.WriteLine("Employee wage = " + empWage);
+
         }
     }
     }
